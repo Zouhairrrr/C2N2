@@ -1,0 +1,209 @@
+body{
+	
+	background-image: url(bg-pattern-bottom-desktop.svg), url(bg-pattern-top-desktop.svg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 75%, 40%;
+	display:flex; 
+      flex-direction:column; 
+      justify-content:center;
+	  align-items: center;
+	  width: 80%;
+	  margin: 0 auto;
+}
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Spartan', sans-serif;
+	
+}
+
+.nav1{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.big-title, .small-title{
+	color: hsl(300deg 18% 76%);
+	width: 90%;
+}
+.top{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 70px;
+}
+.title{
+	width: 50%;
+
+}
+.big-title{
+    font-size: 23px;
+    color: hsl(300, 43%, 22%);
+}
+
+.small-title{
+	color: hsl(300deg 18% 76%);
+	font-size: 15px;
+}
+
+.stars{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.rating {
+
+background-color: hsl(300, 24%, 96%);
+border-radius: 6px;
+padding: 15px 40px;
+display: flex;
+flex-direction: row;
+}
+
+.space3, .space2{
+margin-top:17px;
+}
+
+.space1{
+align-self: flex-start;
+}
+
+.space2{
+align-self: center;
+}
+
+.space3{
+align-self: flex-end;
+}
+
+.buttom{
+margin-top: 70px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 70px 0;
+}
+.icon {
+width: 15px;
+height: 15px;
+
+}
+.para{
+color: hsl(300, 43%, 22%);
+margin-left: 24px;
+font-size: 23px;
+font-family: 'spaartan', Bold;
+}
+
+.paraghh{
+margin-top: 20px;
+font-size: 23px;
+color: hsl(300deg 18% 76%)
+}
+.profil{
+background-color: hsl(300, 43%, 22%);
+border-radius: 1rem;
+padding: 50px;
+}
+
+.one{
+margin-right: 15px;
+align-self: flex-start;
+}
+
+.two{
+margin: 0 15px;
+align-self: center;
+}
+
+.there{
+	margin: 20px 0 0 15px;
+	align-self: flex-end;
+	
+}
+
+.picture{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.name div{
+	margin-left: 1rem;
+}
+.name{
+	display: flex;
+	flex-direction: row;
+
+}
+.text{
+	font-size: 23px;
+	color:hsl(300, 58%, 55%);
+
+}
+
+.nom{
+	color:white;
+}
+
+
+@media (max-width:600px){
+
+
+.top{
+	flex-direction: column;
+}
+
+.title{
+	width: 100%;
+	text-align: center;
+}
+
+.stars{
+	width: 100%;
+	margin-top: 70px;
+}
+
+.buttom{
+	flex-direction: column;
+	width: 100%;
+	align-items: unset;
+}
+
+.profil{
+	margin:0;
+	align-self: unset;
+}
+.rating{
+	align-self: unset;
+	justify-content: center;
+}
+.two,.there{
+	margin-top: 20px;
+}
+
+.big-title, .small-title {
+
+    width: 100%;
+}
+
+
+}
+
+
+
+@media (max-width:540px){
+
+.para{
+	margin-left: 0;
+}
+
+.rating{
+	flex-direction: column;
+	align-items: center;
+}
+} 
